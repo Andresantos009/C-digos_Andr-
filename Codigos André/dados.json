@@ -1,0 +1,8 @@
+{
+    "nome": "Maria",
+    "idade": 30,
+    "cursos": [
+        "Python",
+        "Machine Learning"
+    ]
+}
