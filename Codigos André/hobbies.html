@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Meus Hobbies</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(to right, #e0f7fa, #f1f8e9);
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #00796b;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    ul {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    li {
+      background-color: #ffffff;
+      border-radius: 10px;
+      padding: 20px;
+      list-style: none;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      display: flex;
+      align-items: center;
+      transition: transform 0.3s ease;
+    }
+
+    li:hover {
+      transform: translateY(-5px);
+    }
+
+    li i {
+      font-size: 24px;
+      margin-right: 15px;
+      color: #00796b;
+    }
+
+    li span {
+      font-size: 18px;
+      font-weight: 500;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2em;
+      }
+
+      li {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      li i {
+        margin-bottom: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Meus Hobbies</h1>
+  </header>
+  <ul>
+    <li><i class="fas fa-book"></i><span>Ler livros de ficção científica</span></li>
+    <li><i class="fas fa-guitar"></i><span>Tocar violão</span></li>
+    <li><i class="fas fa-hiking"></i><span>Fazer trilhas na natureza</span></li>
+    <li><i class="fas fa-utensils"></i><span>Cozinhar receitas novas</span></li>
+    <li><i class="fas fa-film"></i><span>Assistir filmes clássicos</span></li>
+  </ul>
+</body>
+</html>
