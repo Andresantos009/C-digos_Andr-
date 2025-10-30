@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Meus Hobbies</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    :root {
+      --bg-dark: linear-gradient(to right, #1c1c1c, #2c3e50);
+      --card-dark: #2e3b4e;
+      --text-dark: #e0e0e0;
+      --accent: #00bcd4;
+      --accent-hover: #0097a7;
+      --border-metal: 1px solid #607d8b;
+    }
+
+    body {
+      font-family: 'Orbitron', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: var(--bg-dark);
+      color: var(--text-dark);
+    }
+
+    header {
+      background-color: var(--accent);
+      color: #fff;
+      padding: 30px 20px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+      border-bottom: var(--border-metal);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 3em;
+      letter-spacing: 2px;
+      text-shadow: 2px 2px #000;
+    }
+
+    ul {
+      max-width: 1000px;
+      margin: 50px auto;
+      padding: 0 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+
+    li {
+      background-color: var(--card-dark);
+      border-radius: 12px;
+      padding: 25px;
+      list-style: none;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+      display: flex;
+      align-items: center;
+      border: var(--border-metal);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    li:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.5);
+    }
+
+    li i {
+      font-size: 28px;
+      margin-right: 20px;
+      color: var(--accent);
+      text-shadow: 0 0 5px var(--accent);
+    }
+
+    li span {
+      font-size: 20px;
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.2em;
+      }
+
+      li {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      li i {
+        margin-bottom: 12px;
+        margin-right: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Meus Hobbies</h1>
+  </header>
+  <ul aria-label="Lista de hobbies">
+    <li><i class="fas fa-guitar" title="Tocar instrumentos"></i><span>Tocar instrumentos</span></li>
+    <li><i class="fas fa-hiking" title="Fazer trilhas na natureza"></i><span>Fazer trilhas na natureza</span></li>
+    <li><i class="fas fa-utensils" title="Cozinhar receitas novas"></i><span>Cozinhar receitas novas</span></li>
+    <li><i class="fas fa-film" title="Assistir filmes"></i><span>Assistir filmes de ficção científica / ação / aventura</span></li>
+    <li><i class="fas fa-campground" title="Acampar na natureza"></i><span>Acampar na natureza</span></li>
+    <li><i class="fas fa-dumbbell" title="Praticar esportes"></i><span>Praticar vários tipos de esporte</span></li>
+  </ul>
+</body>
+</html>
